@@ -1,0 +1,37 @@
+{
+    "name": "bloodbowl/odm-tools",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Barney Hanlon",
+            "email": "barney@shrikeh.net"
+        }
+    ],
+    "description": "Tools for importing from the Blood Bowl game SQLLite engine",
+    "require" : {
+        "php":                      ">=5.4.1",
+        "pimple/pimple":            "1.*",
+        "doctrine/dbal":            "dev-master",
+        "bloodbowl/odm-core":       "dev-master",
+        "symfony/console":          "~2.1",
+        "symfony/finder":           "~2.1",
+        "symfony/yaml":             "~2.1"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": ">=3.7.1",
+        "phploc/phploc": ">=1.7.4",
+        "pdepend/pdepend": "*",
+        "shrink/phpcpd": "dev-master",
+        "zerkalica/php-code-browser": "dev-master",
+        "phpmd/phpmd" : ">=1.4.0",
+        "squizlabs/php_codesniffer": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "BloodBowl\\ODM\\Console": "src/"
+        }
+    },
+
+    "bin": ["bin/bb-odm"],
+    "minimum-stability": "dev"
+}
